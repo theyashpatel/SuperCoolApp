@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var logo:UIImageView!
+    @IBOutlet weak var bgimage:UIImageView!
+    @IBOutlet weak var uglybutton:UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +24,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+
+    @IBAction func uglyButtonPressed(sender: UIButton) {
+        
+        logo.hidden = false
+        bgimage.hidden = false
+        uglybutton.hidden = true
+    }
 
 }
 
